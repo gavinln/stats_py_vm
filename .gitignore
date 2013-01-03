@@ -1,0 +1,12 @@
+*~
+*.pyc
+*.class
+*.swp
+.vagrant
+nosetests.xml
+coverage.xml
+sloccount.sc
+pylint.log
+output.xml
+pep8.log
+sphinx/build
