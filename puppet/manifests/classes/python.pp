@@ -23,18 +23,20 @@ class python {
 #                command => "$HOME_DIR/unix/bin/pip install -r $PROJ_DIR/puppet/requirements/compiled.txt",
 #                require => Exec['virtualenv-create']
 #            }
-            package { ['nose', 'sphinx', 'tornado', 'ipython']:
+            package { ['nose', 'sphinx', 'tornado', 'ipython', 'sympy']:
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
             }
-            exec { 'pandas':
-                command => 'easy_install pandas',
-                require => Package['python-pip', 'python-numpy']
+            package { "pandas": 
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
             }
-            exec { 'statsmodels':
-                command => 'easy_install statsmodels',
-                require => Exec['pandas']
+            package { 'statsmodels':
+                ensure => '0.4.0',
+                provider => pip,
+                require => Package['pandas']
             }
         }
     }
