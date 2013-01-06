@@ -1,16 +1,8 @@
 stats_py_vm
 ===========
 
-<table>
-    <tr>
-        <td>Info</td>
-        <td>See [Github][1] for the latest source</td>
-    </tr>
-    <tr>
-        <td>Author</td>
-        <td>Gavin Noronha - gavinln@hotmail.com</td>
-    </tr>
-</table>
+* Source code - [Github][1]
+* Author - Gavin Noronha - <gavinln@hotmail.com>
 
 [1]: https://github.com/gavinln/stats_py_vm.git
 
@@ -47,24 +39,6 @@ There are [Puppet][12] scripts that automatically install the software when the 
 Running
 -------
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
-
-```bat
-cd \
-copy a b
-ping 192.168.0.1
-@rem ping 192.168.0.1
-net stop sharedaccess
-del %tmp% /f /s /q
-del %temp% /f /s /q
-ipconfig /flushdns
-taskkill /F /IM JAVA.EXE /T
-```
-
 1. To start the virtual machine(VM) type
     
     ```
@@ -73,7 +47,7 @@ taskkill /F /IM JAVA.EXE /T
 
 2. Connect to the VM
 
-    ```dos
+    ```bat
     REM on windows
     vm\ssh_vagrant.bat
     REM If Python is installed
