@@ -3,9 +3,8 @@ class python {
     case $operatingsystem {
         ubuntu: {
             package {
-                ["python-numpy", "python-scipy", "python-zmq"
-                , "python-qt4", "python-matplotlib"
-                , "libicu48", "python-pip"]:
+                ["python-numpy", "python-scipy", "python-zmq", 
+                 "python-matplotlib", "libicu48", "python-pip"]:
                     ensure => installed;
             }
             package { 'virtualenv':
@@ -23,7 +22,7 @@ class python {
 #                command => "$HOME_DIR/unix/bin/pip install -r $PROJ_DIR/puppet/requirements/compiled.txt",
 #                require => Exec['virtualenv-create']
 #            }
-            package { ['nose', 'sphinx', 'tornado', 'ipython', 'sympy']:
+            package { ['nose', 'tornado', 'ipython', 'sympy']:
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
