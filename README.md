@@ -53,13 +53,17 @@ Running
 
 2. Connect to the VM:
 
+    ```dos
     REM on windows
     vm\ssh_vagrant.bat
-    or
+    REM If Python is installed
     python vm\ssh_vagrant.py
-    
+    ```
+  
+    ```bash
     # on unix
     vagrant ssh
+    ```
 
 3. Start the notebook:
 
