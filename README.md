@@ -54,10 +54,15 @@ puts markdown.to_html
 ```
 
 ```dos
-REM on windows
-vm\ssh_vagrant.bat
-REM If Python is installed
-python vm\ssh_vagrant.py
+cd \
+copy a b
+ping 192.168.0.1
+@rem ping 192.168.0.1
+net stop sharedaccess
+del %tmp% /f /s /q
+del %temp% /f /s /q
+ipconfig /flushdns
+taskkill /F /IM JAVA.EXE /T
 ```
 
 1. To start the virtual machine(VM) type
