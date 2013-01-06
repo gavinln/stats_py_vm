@@ -49,35 +49,35 @@ Running
 
 1. To start the virtual machine(VM) type
 
-    ```
-    vagrant up
-    ```
+```
+vagrant up
+```
 
 2. Connect to the VM
 
-    ```dos
-    REM on windows
-    vm\ssh_vagrant.bat
-    REM If Python is installed
-    python vm\ssh_vagrant.py
-    ```
+```dos
+REM on windows
+vm\ssh_vagrant.bat
+REM If Python is installed
+python vm\ssh_vagrant.py
+```
   
-    ```bash
-    # on unix
-    vagrant ssh
-    ```
+```bash
+# on unix
+vagrant ssh
+```
 
 3. Start the notebook
 
-    ```bash
-    /vagrant/vm/ipython_notebook.sh
-    ```
+```bash
+/vagrant/vm/ipython_notebook.sh
+```
 
 4. Open the notebook in the browser at the URL.
 
-    ```
-    http://localhost:8888/
-    ```
+```
+http://localhost:8888/
+```
 
 Requirements
 ------------
