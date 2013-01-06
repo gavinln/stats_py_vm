@@ -53,7 +53,7 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
-```dos
+```bat
 cd \
 copy a b
 ping 192.168.0.1
