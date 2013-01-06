@@ -20,14 +20,14 @@ About
 This project provides a [Ubuntu 12][2] [Vagrant][3] Virtual Machine (VM) with numerical and
 scientific libraries for Python. It includes the following libraries.
 
-    * [Numpy][4]
-    * [Scipy][5]
-    * [Matplotlib][6]
-    * [IPython-console][7]
-    * [IPython-notebook][8]
-    * [Sympy][9]
-    * [Pandas][10]
-    * [Statsmodels][11]
+* [Numpy][4]
+* [Scipy][5]
+* [Matplotlib][6]
+* [IPython-console][7]
+* [IPython-notebook][8]
+* [Sympy][9]
+* [Pandas][10]
+* [Statsmodels][11]
 
 
 There are [Puppet][12] scripts that automatically install the software when the VM is started.
