@@ -4,7 +4,7 @@ stats_py_vm
 <table>
     <tr>
         <td>Info</td>
-        <td>See [github][1] for the latest source</td>
+        <td>See [Github][1] for the latest source</td>
     </tr>
     <tr>
         <td>Author</td>
@@ -12,7 +12,7 @@ stats_py_vm
     </tr>
 </table>
 
-[1]: https://github.com/gavinln/stats_py_vm.git	"Github"
+[1]: https://github.com/gavinln/stats_py_vm.git
 
 About
 -----
