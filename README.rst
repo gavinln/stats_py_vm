@@ -30,7 +30,7 @@ scientific libraries for Python. It includes::
 .. _Pandas: http://pandas.pydata.org/
 .. _Statsmodels: http://statsmodels.sourceforge.net/
 
-There are `Puppet <http://puppetlabs.com/>` scripts that automatically install
+There are `Puppet <http://puppetlabs.com/>`_ scripts that automatically install
 the software when the VM is started.
 
 Running
