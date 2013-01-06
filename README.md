@@ -9,7 +9,7 @@ stats_py_vm
 About
 -----
 
-This project provides a [Ubuntu 12][2] [Vagrant][3] Virtual Machine (VM) with numerical and
+This project provides a [Ubuntu (12.0)][2] [Vagrant][3] Virtual Machine (VM) with numerical and
 scientific libraries for Python. It includes the following libraries.
 
 * [Numpy][4]
