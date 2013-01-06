@@ -18,7 +18,7 @@ About
 -----
 
 This project provides a [Ubuntu 12][2] [Vagrant][3] Virtual Machine (VM) with numerical and
-scientific libraries for Python. It includes::
+scientific libraries for Python. It includes:
 
     * [Numpy][4]
     * [Scipy][5]
