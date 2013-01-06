@@ -17,7 +17,7 @@ stats_py_vm
 About
 -----
 
-This project provides a [Ubuntu 12.04][2] [Vagrant][3] Virtual Machine (VM) with numerical and
+This project provides a [Ubuntu 12][2] [Vagrant][3] Virtual Machine (VM) with numerical and
 scientific libraries for Python. It includes::
 
     * [Numpy][4]
@@ -32,8 +32,8 @@ scientific libraries for Python. It includes::
 
 There are [Puppet][12] scripts that automatically install the software when the VM is started.
 
-[2]: http://releases.ubuntu.com/precise/	"Ubuntu 12.03"
-[3]: http://www.vagrantup.com/	"Vagrant"
+[2]: http://releases.ubuntu.com/precise/
+[3]: http://www.vagrantup.com/
 [4]: http://www.numpy.org/	"Numpy"
 [5]: http://www.scipy.org/	"Scipy"
 [6]: http://matplotlib.org/	"Matplotlib"
