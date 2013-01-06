@@ -53,6 +53,13 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
+```dos
+REM on windows
+vm\ssh_vagrant.bat
+REM If Python is installed
+python vm\ssh_vagrant.py
+```
+
 1. To start the virtual machine(VM) type
     
     ```
