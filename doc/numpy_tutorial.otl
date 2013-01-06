@@ -1,0 +1,19 @@
+Miscellaneous
+	Add README.rst as in c:\ws\jekyll_vm
+	Add github remote as in c:\ws\jekyll_vm
+	Post in groups 
+	https://groups.google.com/forum/?fromgroups=#!topic/pystatsmodels/rB3xgPTX8kU
+numpy
+	[_] 33% Array
+		[X] Introduction
+		[X] Creation
+		[X] Printing
+		[_] Basic operations
+		[_] In-place operations
+		[_] Unary operations
+		[_] Universal functions
+		[_] Indexing, Slicing and Iterating
+		[_] Shape Manipulation
+			[_] Changing shape
+			[_] Stacking
+			[_] Copies and Views
