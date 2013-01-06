@@ -67,11 +67,14 @@ Running
 
 3. Start the notebook
 
+    ```bash
     /vagrant/vm/ipython_notebook.sh
+    ```
 
 4. Open the notebook in the browser at the URL.
 
     http://localhost:8888/
+    
 
 Requirements
 ------------
