@@ -49,7 +49,9 @@ Running
 
 1. To start the virtual machine(VM) type
 
+    ```
     vagrant up
+    ```
 
 2. Connect to the VM
 
@@ -73,8 +75,9 @@ Running
 
 4. Open the notebook in the browser at the URL.
 
+    ```
     http://localhost:8888/
-    
+    ```
 
 Requirements
 ------------
