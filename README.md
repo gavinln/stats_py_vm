@@ -18,7 +18,7 @@ About
 -----
 
 This project provides a [Ubuntu 12][2] [Vagrant][3] Virtual Machine (VM) with numerical and
-scientific libraries for Python. It includes:
+scientific libraries for Python. It includes the following libraries.
 
     * [Numpy][4]
     * [Scipy][5]
@@ -47,11 +47,11 @@ There are [Puppet][12] scripts that automatically install the software when the 
 Running
 -------
 
-1. To start the virtual machine(VM) type:
+1. To start the virtual machine(VM) type
 
     vagrant up
 
-2. Connect to the VM:
+2. Connect to the VM
 
     ```dos
     REM on windows
@@ -65,11 +65,11 @@ Running
     vagrant ssh
     ```
 
-3. Start the notebook:
+3. Start the notebook
 
     /vagrant/vm/ipython_notebook.sh
 
-4. Open the notebook in the browser at::
+4. Open the notebook in the browser at the URL.
 
     http://localhost:8888/
 
