@@ -23,8 +23,8 @@ scientific libraries for Python. It includes::
     * [Numpy][4]
     * [Scipy][5]
     * [Matplotlib][6]
-    * [IPython - console][7]
-    * [IPython - notebook][8]
+    * [IPython-console][7]
+    * [IPython-notebook][8]
     * [Sympy][9]
     * [Pandas][10]
     * [Statsmodels][11]
@@ -34,15 +34,15 @@ There are [Puppet][12] scripts that automatically install the software when the 
 
 [2]: http://releases.ubuntu.com/precise/
 [3]: http://www.vagrantup.com/
-[4]: http://www.numpy.org/	"Numpy"
-[5]: http://www.scipy.org/	"Scipy"
-[6]: http://matplotlib.org/	"Matplotlib"
-[7]: http://ipython.org/	"IPython - console"
-[8]: http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html	"IPython - notebook "
-[9]: http://sympy.org/en/index.html	"Sympy"
-[10]: http://pandas.pydata.org/	"Pandas"
-[11]: http://statsmodels.sourceforge.net/	"Statsmodels"
-[12]: http://puppetlabs.com/	"Puppet"
+[4]: http://www.numpy.org/
+[5]: http://www.scipy.org/
+[6]: http://matplotlib.org/
+[7]: http://ipython.org/
+[8]: http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html
+[9]: http://sympy.org/en/index.html
+[10]: http://pandas.pydata.org/
+[11]: http://statsmodels.sourceforge.net/
+[12]: http://puppetlabs.com/
 
 Running
 -------
@@ -57,7 +57,7 @@ Running
     vm\ssh_vagrant.bat
     or
     python vm\ssh_vagrant.py
-
+    
     # on unix
     vagrant ssh
 
@@ -80,10 +80,10 @@ also provides an [SSH  client][13] for Windows.
 * [Vagrant][15]
 * [Git][16]
 
-[13]: http://en.wikipedia.org/wiki/Secure_Shell	"SSH client"
-[14]: https://www.virtualbox.org/	"Oracle VM VirtualBox"
-[15]: http://vagrantup.com/	        "Vagrant"
-[16]: http://git-scm.com/	        "Git"
+[13]: http://en.wikipedia.org/wiki/Secure_Shell
+[14]: https://www.virtualbox.org/
+[15]: http://vagrantup.com/
+[16]: http://git-scm.com/  
 
 Credits
 -------
