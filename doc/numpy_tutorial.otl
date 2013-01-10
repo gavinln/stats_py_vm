@@ -17,18 +17,3 @@ numpy
 			[_] Changing shape
 			[_] Stacking
 			[_] Copies and Views
-
-description
-	OS
-		Ubuntu 12.04: http://releases.ubuntu.com/precise/
-		Git: http://git-scm.com/
-		Numpy: http://www.numpy.org/
-		Scipy: http://www.scipy.org/
-		Matplotlib: http://matplotlib.org/
-		IPython - console: http://ipython.org/
-		IPython - notebook: http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html
-		Sympy: http://sympy.org/en/index.html
-		Pandas: http://pandas.pydata.org/
-		Statsmodels: http://statsmodels.sourceforge.net/
-
-
