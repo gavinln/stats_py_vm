@@ -40,7 +40,7 @@ Running
 -------
 
 1. To start the virtual machine(VM) type
-    
+
     ```
     vagrant up
     ```
@@ -53,7 +53,7 @@ Running
     REM If Python is installed
     python vm\ssh_vagrant.py
     ```
-      
+
     ```bash
     # on unix
     vagrant ssh
@@ -85,7 +85,7 @@ also provides an [SSH  client][13] for Windows.
 [13]: http://en.wikipedia.org/wiki/Secure_Shell
 [14]: https://www.virtualbox.org/
 [15]: http://vagrantup.com/
-[16]: http://git-scm.com/  
+[16]: http://git-scm.com/
 
 Credits
 -------
