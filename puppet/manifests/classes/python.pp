@@ -22,17 +22,17 @@ class python {
 #                command => "$HOME_DIR/unix/bin/pip install -r $PROJ_DIR/puppet/requirements/compiled.txt",
 #                require => Exec['virtualenv-create']
 #            }
-            package { ['nose', 'tornado', 'ipython', 'jinja2']:
+            package { ['nose', 'tornado', 'jinja2']:
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
             }
-            package { "sympy":
+            package { 'sympy':
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
             }
-            package { "pandas":
+            package { 'pandas':
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
@@ -41,6 +41,17 @@ class python {
                 ensure => '0.4.0',
                 provider => pip,
                 require => Package['pandas']
+            }
+            package { 'ipython':
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
+            }
+
+            package { 'ipython-sql':
+                ensure => installed,
+                provider => pip,
+                require => Package['ipython']
             }
         }
     }
