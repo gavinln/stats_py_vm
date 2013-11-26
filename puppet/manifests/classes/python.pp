@@ -38,7 +38,12 @@ class python {
                 require => Package['virtualenv']
             }
             package { 'statsmodels':
-                ensure => '0.4.0',
+                ensure => '0.4.0', # latest version does not install correctly
+                provider => pip,
+                require => Package['pandas']
+            }
+            package { 'vincent':
+                ensure => installed,
                 provider => pip,
                 require => Package['pandas']
             }
@@ -47,7 +52,6 @@ class python {
                 provider => pip,
                 require => Package['virtualenv']
             }
-
             package { 'ipython-sql':
                 ensure => installed,
                 provider => pip,
