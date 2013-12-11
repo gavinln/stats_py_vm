@@ -32,11 +32,6 @@ class python {
                 provider => pip,
                 require => Package['virtualenv']
             }
-            package { 'pandoc':
-                ensure => installed,
-                provider => pip,
-                require => Package['virtualenv']
-            }
             package { ['nose', 'tornado', 'jinja2']:
                 ensure => installed,
                 provider => pip,
