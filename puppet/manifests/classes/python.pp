@@ -22,6 +22,21 @@ class python {
 #                command => "$HOME_DIR/unix/bin/pip install -r $PROJ_DIR/puppet/requirements/compiled.txt",
 #                require => Exec['virtualenv-create']
 #            }
+            package { 'untangle':
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
+            }
+            package { 'pygments':
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
+            }
+            package { 'pandoc':
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
+            }
             package { ['nose', 'tornado', 'jinja2']:
                 ensure => installed,
                 provider => pip,

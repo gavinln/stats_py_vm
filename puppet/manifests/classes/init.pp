@@ -29,6 +29,12 @@ class init {
                     Exec['update_apt'],
                 ];
             }
+            package { "pandoc":
+                ensure => present,
+                require => [
+                    Exec['update_apt'],
+                ];
+            }
         }
     }
 }
