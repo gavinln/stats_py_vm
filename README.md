@@ -49,9 +49,7 @@ Running
 
     ```bat
     REM on windows
-    vm\ssh_vagrant.bat
-    REM If Python is installed
-    python vm\ssh_vagrant.py
+    vagrant ssh
     ```
 
     ```bash
