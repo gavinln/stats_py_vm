@@ -3,7 +3,7 @@ class python {
     case $operatingsystem {
         ubuntu: {
             package {
-                ["python-numpy", "python-scipy", "python-zmq", 
+                ["python-numpy", "python-scipy", "python-zmq",
                  "python-matplotlib", "libicu48", "python-pip"]:
                     ensure => installed;
             }
@@ -32,7 +32,17 @@ class python {
                 provider => pip,
                 require => Package['virtualenv']
             }
-            package { ['nose', 'tornado', 'jinja2']:
+            package { 'nose':
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
+            }
+            package { 'tornado':
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
+            }
+            package { 'jinja2':
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
@@ -41,6 +51,10 @@ class python {
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
+            }
+            package { 'scikit-learn':
+                provider => pip,
+                require => Package['python-matplotlib']
             }
             package { 'pandas':
                 ensure => installed,
