@@ -12,16 +12,6 @@ class python {
                 provider => pip,
                 require => Package['python-pip']
             }
-#            exec { "virtualenv-create":
-#                command => "virtualenv --system-site-packages $HOME_DIR/unix",
-#                cwd => "$PROJ_DIR",
-#                creates => "$HOME_DIR/unix",
-#                require => Package['virtualenv']
-#            }
-#            exec { "pip-install-compiled":
-#                command => "$HOME_DIR/unix/bin/pip install -r $PROJ_DIR/puppet/requirements/compiled.txt",
-#                require => Exec['virtualenv-create']
-#            }
             package { 'untangle':
                 ensure => installed,
                 provider => pip,

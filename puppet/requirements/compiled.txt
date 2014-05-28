@@ -1,4 +1,0 @@
-nose
-sphinx
-tornado
-ipython
