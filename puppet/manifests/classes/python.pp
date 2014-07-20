@@ -2,10 +2,18 @@
 class python {
     case $operatingsystem {
         ubuntu: {
-            package {
-                ["python-numpy", "python-scipy", "python-zmq",
-                 "python-matplotlib", "libicu48", "python-pip"]:
-                    ensure => installed;
+            package { "python-pip":
+                ensure => installed
+            }
+            package { "pyzmq":
+                ensure => installed,
+                provider => pip,
+                require => Package['python-pip']
+            }
+            package { ["numpy", "scipy", "matplotlib"]:
+                ensure => installed,
+                provider => pip,
+                require => Package['python-pip']
             }
             package { 'virtualenv':
                 ensure => installed,
@@ -42,25 +50,25 @@ class python {
                 provider => pip,
                 require => Package['virtualenv']
             }
-            package { 'scikit-learn':
-                provider => pip,
-                require => Package['python-matplotlib']
-            }
-            package { 'pandas':
-                ensure => installed,
-                provider => pip,
-                require => Package['virtualenv']
-            }
-            package { 'statsmodels':
-                ensure => '0.4.0', # latest version does not install correctly
-                provider => pip,
-                require => Package['pandas']
-            }
-            package { 'vincent':
-                ensure => installed,
-                provider => pip,
-                require => Package['pandas']
-            }
+            #package { 'scikit-learn':
+                #provider => pip,
+                #require => Package['python-matplotlib']
+            #}
+            #package { 'pandas':
+                #ensure => installed,
+                #provider => pip,
+                #require => Package['virtualenv']
+            #}
+            #package { 'statsmodels':
+                #ensure => '0.4.0', # latest version does not install correctly
+                #provider => pip,
+                #require => Package['pandas']
+            #}
+            #package { 'vincent':
+                #ensure => installed,
+                #provider => pip,
+                #require => Package['pandas']
+            #}
             package { 'ipython':
                 ensure => installed,
                 provider => pip,
