@@ -5,12 +5,11 @@ class python {
             package { "python-pip":
                 ensure => installed
             }
-            package { "pyzmq":
+            package { ["python-zmq", "python-matplotlib", "python-scipy"]:
                 ensure => installed,
-                provider => pip,
                 require => Package['python-pip']
             }
-            package { ["numpy", "scipy", "matplotlib"]:
+            package { ["numpy"]:
                 ensure => installed,
                 provider => pip,
                 require => Package['python-pip']
@@ -50,10 +49,10 @@ class python {
                 provider => pip,
                 require => Package['virtualenv']
             }
-            #package { 'scikit-learn':
-                #provider => pip,
-                #require => Package['python-matplotlib']
-            #}
+            package { 'scikit-learn':
+                provider => pip,
+                require => Package['python-matplotlib']
+            }
             #package { 'pandas':
                 #ensure => installed,
                 #provider => pip,
