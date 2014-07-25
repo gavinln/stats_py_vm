@@ -53,11 +53,10 @@ class python {
                 provider => pip,
                 require => Package['python-matplotlib']
             }
-            #package { 'pandas':
-                #ensure => installed,
-                #provider => pip,
-                #require => Package['virtualenv']
-            #}
+            package { 'python-pandas':
+                ensure => installed,
+                require => Package['python-pip']
+            }
             #package { 'statsmodels':
                 #ensure => '0.4.0', # latest version does not install correctly
                 #provider => pip,
