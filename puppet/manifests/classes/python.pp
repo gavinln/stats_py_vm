@@ -57,6 +57,11 @@ class python {
                 ensure => installed,
                 require => Package['python-pip']
             }
+            package { 'seaborn':
+                ensure => installed,
+                provider => pip,
+                require => Package['python-pip']
+            }
             #package { 'statsmodels':
                 #ensure => '0.4.0', # latest version does not install correctly
                 #provider => pip,
