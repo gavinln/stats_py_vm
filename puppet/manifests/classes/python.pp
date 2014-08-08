@@ -5,7 +5,7 @@ class python {
             package { "python-pip":
                 ensure => installed
             }
-            package { ["python-zmq", "python-matplotlib", "python-scipy"]:
+            package { ["python-zmq", "python-scipy"]:
                 ensure => installed,
                 require => Package['python-pip']
             }
@@ -14,12 +14,30 @@ class python {
                 provider => pip,
                 require => Package['python-pip']
             }
+            package { ['libfreetype6-dev', 'pkg-config']:
+                ensure => installed
+            }
+            package { ['pyparsing']:
+                ensure => installed,
+                provider => pip,
+                require => Package['python-pip']
+            }
+            package { ["matplotlib"]:
+                ensure => installed,
+                provider => pip,
+                require => Package['numpy', 'pyparsing', 'libfreetype6-dev']
+            }
             package { 'virtualenv':
                 ensure => installed,
                 provider => pip,
                 require => Package['python-pip']
             }
             package { 'untangle':
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
+            }
+            package { 'yolk':
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
@@ -51,22 +69,28 @@ class python {
             }
             package { 'scikit-learn':
                 provider => pip,
-                require => Package['python-matplotlib']
+                require => Package['matplotlib']
             }
-            package { 'python-pandas':
+            package { 'pandas':
                 ensure => installed,
-                require => Package['python-pip']
+                provider => pip,
+                require => Package['numpy']
             }
             package { 'seaborn':
                 ensure => installed,
                 provider => pip,
+                require => Package['matplotlib']
+            }
+            package { 'patsy':
+                ensure => installed,
+                provider => pip,
                 require => Package['python-pip']
             }
-            #package { 'statsmodels':
-                #ensure => '0.4.0', # latest version does not install correctly
-                #provider => pip,
-                #require => Package['pandas']
-            #}
+            package { 'statsmodels':
+                ensure => installed,
+                provider => pip,
+                require => Package['patsy', 'numpy', 'pandas', 'python-scipy']
+            }
             #package { 'vincent':
                 #ensure => installed,
                 #provider => pip,
