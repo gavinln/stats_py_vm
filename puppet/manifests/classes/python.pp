@@ -86,6 +86,11 @@ class python {
                 provider => pip,
                 require => Package['python-pip']
             }
+            package { 'bokeh':
+                ensure => installed,
+                provider => pip,
+                require => Package['python-pip']
+            }
             package { 'statsmodels':
                 ensure => installed,
                 provider => pip,
