@@ -10,6 +10,9 @@ import collections
 import pandas as pd
 import datetime
 
+# example of links within IPython notebook
+# http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/table_of_contents_ipython.ipynb#top
+
 
 def existsFile(fileName):
     fullFileName = os.path.join('.', fileName)
