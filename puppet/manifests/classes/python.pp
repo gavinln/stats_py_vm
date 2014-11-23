@@ -96,11 +96,11 @@ class python {
                 provider => pip,
                 require => Package['patsy', 'numpy', 'pandas', 'python-scipy']
             }
-            #package { 'vincent':
-                #ensure => installed,
-                #provider => pip,
-                #require => Package['pandas']
-            #}
+            package { 'vincent':
+                ensure => installed,
+                provider => pip,
+                require => Package['pandas']
+            }
             package { 'ipython':
                 ensure => installed,
                 provider => pip,
