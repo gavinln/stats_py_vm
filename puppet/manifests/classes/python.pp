@@ -86,11 +86,6 @@ class python {
                 provider => pip,
                 require => Package['python-pip']
             }
-            package { 'bokeh':
-                ensure => installed,
-                provider => pip,
-                require => Package['python-pip']
-            }
             package { 'statsmodels':
                 ensure => installed,
                 provider => pip,
@@ -105,11 +100,6 @@ class python {
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
-            }
-            package { 'ipython-sql':
-                ensure => installed,
-                provider => pip,
-                require => Package['ipython']
             }
         }
     }
