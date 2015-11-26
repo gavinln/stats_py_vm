@@ -10,3 +10,4 @@ pylint.log
 output.xml
 pep8.log
 sphinx/build
+notebooks/scikit-learn/.ipynb_checkpoints

@@ -96,10 +96,20 @@ class python {
                 provider => pip,
                 require => Package['pandas']
             }
-            package { 'ipython':
+            package { 'jsonschema':
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
+            }
+            package { 'terminado':
+                ensure => installed,
+                provider => pip,
+                require => Package['virtualenv']
+            }
+            package { 'ipython':
+                ensure => '3.2.1',
+                provider => pip,
+                require => Package['virtualenv', 'jsonschema', 'terminado']
             }
         }
     }
