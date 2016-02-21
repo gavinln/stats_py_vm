@@ -18,22 +18,20 @@ class init {
             # to install software from other apt repositories.
             package { "python-software-properties":
                 ensure => present,
-                require => [
-                    Exec['update_apt'],
-                ];
+                require => Exec['update_apt'];
             }
             $misc_packages = ["make", "curl", "git-core"]
             package { $misc_packages:
                 ensure => present,
-                require => [
-                    Exec['update_apt'],
-                ];
+                require => Exec['update_apt']
             }
             package { "pandoc":
                 ensure => present,
-                require => [
-                    Exec['update_apt'],
-                ];
+                require => Exec['update_apt']
+            }
+            package { "subversion":
+                ensure => present,
+                require => Exec['update_apt']
             }
         }
     }
