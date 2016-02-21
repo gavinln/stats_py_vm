@@ -9,10 +9,15 @@ class python {
                 ensure => installed,
                 require => Package['python-pip']
             }
+            package { "pip":
+                ensure => "8.0.2",
+                provider => pip,
+                require => Package['python-pip']
+            }
             package { "numpy":
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { ['libfreetype6-dev', 'pkg-config']:
                 ensure => installed
@@ -20,7 +25,7 @@ class python {
             package { 'pyparsing':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { "matplotlib":
                 ensure => installed,
@@ -30,42 +35,42 @@ class python {
             package { 'virtualenv':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'untangle':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'yolk':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'pygments':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'nose':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'tornado':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'jinja2':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'sympy':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'scikit-learn':
                 provider => pip,
@@ -84,7 +89,7 @@ class python {
             package { 'patsy':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'statsmodels':
                 ensure => installed,
@@ -94,22 +99,26 @@ class python {
             package { 'bokeh':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['numpy']
             }
             package { 'jsonschema':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
             package { 'terminado':
                 ensure => installed,
                 provider => pip,
-                require => Package['python-pip']
+                require => Package['pip']
             }
-            package { 'ipython':
-                ensure => '3.2.1',
+#            package { 'ipython':
+#                ensure => '3.2.1',
+#                provider => pip,
+#                require => Package['pip', 'jsonschema', 'terminado']
+#            }
+            package { 'jupyter':
                 provider => pip,
-                require => Package['python-pip', 'jsonschema', 'terminado']
+                require => Package['pip']
             }
         }
     }
