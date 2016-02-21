@@ -1,45 +1,50 @@
-stats_py_vm
-===========
+# stats_py_vm
 
-* Source code - [Github][1]
+* Source code - [Github][10]
 * Author - Gavin Noronha - <gavinln@hotmail.com>
 
 [1]: https://github.com/gavinln/stats_py_vm.git
 
-About
------
+## About
 
-This project provides a [Ubuntu (14.04)][2] [Vagrant][3] Virtual Machine (VM) with numerical and
-scientific libraries for Python. It includes the following libraries.
+This project provides a [Ubuntu (14.04)][20] [Vagrant][30] Virtual Machine (VM) with numerical and scientific libraries for Python. It includes the following libraries.
 
-* [Numpy][4]
-* [Scipy][5]
-* [Matplotlib][6]
-* [IPython-console][7]
-* [IPython-notebook][8]
-* [Sympy][9]
-* [Pandas][10]
-* [Statsmodels][11]
-* [Scikit learn][12]
+[20]: http://releases.ubuntu.com/14.04/
+[30]: http://www.vagrantup.com/
 
+* [Numpy][40]
+* [Scipy][50]
+* [IPython-console][70]
+* [IPython-notebook][80]
+* [Sympy][80]
+* [Pandas][90]
+* [Statsmodels][100]
+* [Scikit learn][110]
 
-There are [Puppet][13] scripts that automatically install the software when the VM is started.
+[40]: http://www.numpy.org/
+[50]: http://www.scipy.org/
+[60]: http://ipython.org/
+[70]: http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html
+[80]: http://sympy.org/en/index.html
+[90]: http://pandas.pydata.org/
+[100]: http://statsmodels.sourceforge.net/
+[110]: http://scikit-learn.org/stable/
 
-[2]: http://releases.ubuntu.com/14.04/
-[3]: http://www.vagrantup.com/
-[4]: http://www.numpy.org/
-[5]: http://www.scipy.org/
-[6]: http://matplotlib.org/
-[7]: http://ipython.org/
-[8]: http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html
-[9]: http://sympy.org/en/index.html
-[10]: http://pandas.pydata.org/
-[11]: http://statsmodels.sourceforge.net/
-[12]: http://scikit-learn.org/stable/
-[13]: http://puppetlabs.com/
+### Visualization libraries
 
-Running
--------
+* [Matplotlib][120]
+* [Seaborn][130]
+* [Bokeh][140]
+
+[120]: http://matplotlib.org/
+[130]: http://stanford.edu/~mwaskom/software/seaborn/
+[140]: http://bokeh.pydata.org/en/latest/
+
+There are [Puppet][150] scripts that automatically install the software when the VM is started.
+
+[150]: http://puppetlabs.com/
+
+## Running
 
 1. To start the virtual machine(VM) type
 
@@ -65,26 +70,21 @@ Running
     http://localhost:8888/
     ```
 
-Requirements
-------------
+## Requirements
 
 The following software is needed to get the software from github and run
 Vagrant to set up the Python development environment. The Git environment
-also provides an [SSH  client][14] for Windows.
+also provides an [SSH  client][240] for Windows.
 
-* [Oracle VM VirtualBox][15]
-* [Vagrant][16]
-* [Git][17]
+* [Oracle VM VirtualBox][250]
+* [Vagrant][260]
+* [Git][270]
 
-[14]: http://en.wikipedia.org/wiki/Secure_Shell
-[15]: https://www.virtualbox.org/
-[16]: http://vagrantup.com/
-[17]: http://git-scm.com/
+[240]: http://en.wikipedia.org/wiki/Secure_Shell
+[250]: https://www.virtualbox.org/
+[260]: http://vagrantup.com/
+[270]: http://git-scm.com/
 
-Credits
--------
-
-Thanks to (in no particular order):
+## Credits
 
 * Glen Noronha
-

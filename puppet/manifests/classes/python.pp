@@ -9,7 +9,7 @@ class python {
                 ensure => installed,
                 require => Package['python-pip']
             }
-            package { ["numpy"]:
+            package { "numpy":
                 ensure => installed,
                 provider => pip,
                 require => Package['python-pip']
@@ -17,12 +17,12 @@ class python {
             package { ['libfreetype6-dev', 'pkg-config']:
                 ensure => installed
             }
-            package { ['pyparsing']:
+            package { 'pyparsing':
                 ensure => installed,
                 provider => pip,
                 require => Package['python-pip']
             }
-            package { ["matplotlib"]:
+            package { "matplotlib":
                 ensure => installed,
                 provider => pip,
                 require => Package['numpy', 'pyparsing', 'libfreetype6-dev']
@@ -35,37 +35,37 @@ class python {
             package { 'untangle':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'yolk':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'pygments':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'nose':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'tornado':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'jinja2':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'sympy':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'scikit-learn':
                 provider => pip,
@@ -91,25 +91,25 @@ class python {
                 provider => pip,
                 require => Package['patsy', 'numpy', 'pandas', 'python-scipy']
             }
-            package { 'vincent':
+            package { 'bokeh':
                 ensure => installed,
                 provider => pip,
-                require => Package['pandas']
+                require => Package['python-pip']
             }
             package { 'jsonschema':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'terminado':
                 ensure => installed,
                 provider => pip,
-                require => Package['virtualenv']
+                require => Package['python-pip']
             }
             package { 'ipython':
                 ensure => '3.2.1',
                 provider => pip,
-                require => Package['virtualenv', 'jsonschema', 'terminado']
+                require => Package['python-pip', 'jsonschema', 'terminado']
             }
         }
     }
