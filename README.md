@@ -35,7 +35,7 @@ This project provides a [Ubuntu (14.04)][20] [Vagrant][30] Virtual Machine (VM) 
 * [Matplotlib][120]
 * [Seaborn][130]
 * [Bokeh][140]
-* [ggplot][150]
+* ggplot - does not work yet
 
 [120]: http://matplotlib.org/
 [130]: http://stanford.edu/~mwaskom/software/seaborn/
