@@ -35,14 +35,15 @@ This project provides a [Ubuntu (14.04)][20] [Vagrant][30] Virtual Machine (VM) 
 * [Matplotlib][120]
 * [Seaborn][130]
 * [Bokeh][140]
+* [ggplot][150]
 
 [120]: http://matplotlib.org/
 [130]: http://stanford.edu/~mwaskom/software/seaborn/
 [140]: http://bokeh.pydata.org/en/latest/
 
-There are [Puppet][150] scripts that automatically install the software when the VM is started.
+There are [Puppet][160] scripts that automatically install the software when the VM is started.
 
-[150]: http://puppetlabs.com/
+[160]: http://puppetlabs.com/
 
 ## Running
 
@@ -74,16 +75,16 @@ There are [Puppet][150] scripts that automatically install the software when the
 
 The following software is needed to get the software from github and run
 Vagrant to set up the Python development environment. The Git environment
-also provides an [SSH  client][240] for Windows.
+also provides an [SSH  client][200] for Windows.
 
-* [Oracle VM VirtualBox][250]
-* [Vagrant][260]
-* [Git][270]
+* [Oracle VM VirtualBox][210]
+* [Vagrant][220]
+* [Git][230]
 
-[240]: http://en.wikipedia.org/wiki/Secure_Shell
-[250]: https://www.virtualbox.org/
-[260]: http://vagrantup.com/
-[270]: http://git-scm.com/
+[200]: http://en.wikipedia.org/wiki/Secure_Shell
+[210]: https://www.virtualbox.org/
+[220]: http://vagrantup.com/
+[230]: http://git-scm.com/
 
 ## Credits
 

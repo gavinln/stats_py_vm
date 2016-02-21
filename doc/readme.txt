@@ -16,3 +16,7 @@ vagrant ssh
 5. Open the notebook in the browser at
 http://localhost:8888/
 
+TODO:
+1. clone using ssh not https
+2. Remove vincent examples
+
