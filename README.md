@@ -71,6 +71,8 @@ There are [Puppet][160] scripts that automatically install the software when the
     http://localhost:8888/
     ```
 
+5. Open the **Index - Start Here** notebook  first
+
 ## Requirements
 
 The following software is needed to get the software from github and run
