@@ -111,11 +111,11 @@ class python {
                 provider => pip,
                 require => Package['pip']
             }
-#            package { 'ipython':
-#                ensure => '3.2.1',
-#                provider => pip,
-#                require => Package['pip', 'jsonschema', 'terminado']
-#            }
+            package { 'ipython':
+                ensure => '4.1.1',
+                provider => pip,
+                require => Package['pip', 'jsonschema', 'terminado']
+            }
             package { 'jupyter':
                 provider => pip,
                 require => Package['pip']
