@@ -75,10 +75,13 @@ There are [Puppet][160] scripts that automatically install the software when the
 
 ## Scikit-learn notebooks
 
-To get the Scikit learn [notebooks][170] from [PyCon 2015][180]
+To get the Scikit learn [notebooks][170] from [PyCon 2015][180]. The video for
+this conference is on [Youtube][190]
+
 
 [170]: https://github.com/jakevdp/sklearn_pycon2015
 [180]: https://us.pycon.org/2015/
+[190]: https://www.youtube.com/watch?v=L7R4HUQ-eQ0
 
 1. Change to the notebooks directory
 
@@ -93,7 +96,12 @@ To get the Scikit learn [notebooks][170] from [PyCon 2015][180]
     ```
 
 3. In your Jupyter notebook list at http://localhost:8888/ the notebooks will
-   be in the pycon2015 directory
+   be in the pycon2015 directory.
+
+## Other Scikit resources
+
+https://github.com/amueller/scipy_2015_sklearn_tutorial/tree/master/notebooks
+https://github.com/ogrisel/parallel_ml_tutorial
 
 ## Requirements
 
