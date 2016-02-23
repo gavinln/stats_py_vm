@@ -73,6 +73,28 @@ There are [Puppet][160] scripts that automatically install the software when the
 
 5. Open the **Index - Start Here** notebook  first
 
+## Scikit-learn notebooks
+
+To get the Scikit learn [notebooks][170] from [PyCon 2015][180]
+
+[170]: https://github.com/jakevdp/sklearn_pycon2015
+[180]: https://us.pycon.org/2015/
+
+1. Change to the notebooks directory
+
+    ```
+    cd /vagrant/notebooks
+    ```
+
+2. Get the notebooks into the directory pycon2015
+
+    ```
+    svn export http://github.com/jakevdp/sklearn_pycon2015/trunk/notebooks pycon2015
+    ```
+
+3. In your Jupyter notebook list at http://localhost:8888/ the notebooks will
+   be in the pycon2015 directory
+
 ## Requirements
 
 The following software is needed to get the software from github and run
