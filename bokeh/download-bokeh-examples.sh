@@ -19,3 +19,4 @@ svn export --force $PROJ_URL/stocks examples/stocks  # run python download_sampl
 # svn export $PROJ_URL/movies
 # svn export $PROJ_URL/weather
 
+svn export https://github.com/bokeh/bokeh/trunk/examples/models
