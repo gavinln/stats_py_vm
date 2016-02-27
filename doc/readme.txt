@@ -20,3 +20,28 @@ TODO:
 1. clone using ssh not https
 2. Remove vincent examples
 
+Install
+Microsoft Expression encoder 4 pro
+https://www.youtube.com/watch?v=uY5G5_Igq68
+The website: http://www.microsoft.com/expression/eng/
+The Key: 6WDDQ-K7D4F-GQGF4-2VYBJ-8K6MB
+
+Capture & encode
+https://www.youtube.com/watch?v=G_YNGUgsERc
+
+Convert using VLC
+https://www.videolan.org/vlc/
+
+Add visual overlay and audio overlay (at 1:00)
+https://www.youtube.com/watch?v=PoWFnTKVtkA
+
+Replace audio tracks
+https://social.msdn.microsoft.com/Forums/expression/en-US/f3efbb74-59a2-4cb7-9b62-b90b4b001771/replace-audio-track?forum=encoder
+
+S&P 500 events
+http://www.feltzwealthplan.com/wp-content/uploads/2014/10/compliance-Crisis-and-Events-chart-Oct-2014-Retail.pdf
+
+
+
+
+
