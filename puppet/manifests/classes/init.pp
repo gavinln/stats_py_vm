@@ -10,17 +10,23 @@ class init {
             exec { "update_apt":
                 command => "sudo apt-get update",
             }
-#sudo DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade
-#            exec { "upgrade_apt":
-#                command => "sudo apt-get dist-upgrade -y",
-#            }
             # Provides "add-apt-repository" command, useful if you need
             # to install software from other apt repositories.
             package { "python-software-properties":
                 ensure => present,
                 require => Exec['update_apt'];
             }
-            $misc_packages = ["make", "curl", "git-core"]
+            package { 'autojump':
+                ensure => present,
+                require => Exec['update_apt'];
+            }
+            file { '/etc/profile.d/autojump.sh':
+                ensure => present,
+                source => '/usr/share/autojump/autojump.sh',
+                require => Package['autojump']
+            }
+            $misc_packages = ["make", "curl", "git-core", 'jq', 'tmux',
+                'silversearcher-ag']
             package { $misc_packages:
                 ensure => present,
                 require => Exec['update_apt']
