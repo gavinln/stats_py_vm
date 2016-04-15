@@ -125,7 +125,11 @@ class python {
             }
 # need to use pydotplus instead of pydot because of incompatibility
 # with new pyparsing
-            package { 'pydotplus':
+#            package { 'pydotplus':
+#                provider => pip,
+#                require => Package['pip', 'graphviz']
+#            }
+            package { 'pydot-ng':
                 provider => pip,
                 require => Package['pip', 'graphviz']
             }
