@@ -123,15 +123,13 @@ class python {
             package {'graphviz':
                 ensure => installed
             }
-# need to use pydotplus instead of pydot because of incompatibility
-# with new pyparsing
-#            package { 'pydotplus':
-#                provider => pip,
-#                require => Package['pip', 'graphviz']
-#            }
             package { 'pydot-ng':
                 provider => pip,
                 require => Package['pip', 'graphviz']
+            }
+            package { 'theano':
+                provider => pip,
+                require => Package['pip', 'pydot-ng']
             }
         }
     }
