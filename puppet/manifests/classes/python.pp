@@ -111,19 +111,31 @@ class python {
                 provider => pip,
                 require => Package['pip']
             }
+            package { 'pathlib2':
+                ensure => installed,
+                provider => pip,
+                require => Package['pip']
+            }
             package { 'ipython':
                 ensure => '4.1.1',
                 provider => pip,
-                require => Package['pip', 'jsonschema', 'terminado']
+                require => Package['pathlib2', 'jsonschema', 'terminado']
             }
-            package { 'jupyter':
+            package { 'simplegeneric':
+                ensure => installed,
                 provider => pip,
                 require => Package['pip']
+            }
+            package { 'jupyter':
+                ensure => installed,
+                provider => pip,
+                require => Package['simplegeneric']
             }
             package {'graphviz':
                 ensure => installed
             }
             package { 'pydot-ng':
+                ensure => installed,
                 provider => pip,
                 require => Package['pip', 'graphviz']
             }
