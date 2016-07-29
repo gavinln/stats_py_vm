@@ -1,5 +1,8 @@
 ''' Demonstrates how to use attributes in Python
+	Adding blank lines
 '''
+
+
 class Point(object):
     def __init__(self):
         self._x = None
@@ -20,6 +23,7 @@ class Point(object):
         self._y = value
     def __str__(self):
         return 'Point(%s, %s)' % (self._x, self._y)
+
 
 class Rectangle(object):
     def __init__(self):
@@ -61,9 +65,12 @@ class Rectangle(object):
         ''' computes the area of the rectangle '''
         return 0
 
+
+
 def main():
     import doctest
     doctest.testmod()
+
 
 if __name__ == '__main__':
     main()
