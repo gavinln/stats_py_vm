@@ -67,11 +67,11 @@ class python {
                 provider => pip,
                 require => Package['pip']
             }
-            package { 'sympy':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
+#            package { 'sympy':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['pip']
+#            }
             package { 'scikit-learn':
                 provider => pip,
                 require => Package['matplotlib']
@@ -91,16 +91,16 @@ class python {
                 provider => pip,
                 require => Package['pip']
             }
-            package { 'statsmodels':
-                ensure => installed,
-                provider => pip,
-                require => Package['patsy', 'numpy', 'pandas', 'python-scipy']
-            }
-            package { 'bokeh':
-                ensure => installed,
-                provider => pip,
-                require => Package['numpy']
-            }
+#            package { 'statsmodels':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['patsy', 'numpy', 'pandas', 'python-scipy']
+#            }
+#            package { 'bokeh':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['numpy']
+#            }
             package { 'jsonschema':
                 ensure => installed,
                 provider => pip,
@@ -126,23 +126,23 @@ class python {
                 provider => pip,
                 require => Package['pip']
             }
-            package { 'jupyter':
-                ensure => installed,
-                provider => pip,
-                require => Package['simplegeneric']
-            }
-            package {'graphviz':
-                ensure => installed
-            }
-            package { 'pydot-ng':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip', 'graphviz']
-            }
-            package { 'theano':
-                provider => pip,
-                require => Package['pip', 'pydot-ng']
-            }
+#            package { 'jupyter':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['simplegeneric']
+#            }
+#            package {'graphviz':
+#                ensure => installed
+#            }
+#            package { 'pydot-ng':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['pip', 'graphviz']
+#            }
+#            package { 'theano':
+#                provider => pip,
+#                require => Package['pip', 'pydot-ng']
+#            }
         }
     }
 }
