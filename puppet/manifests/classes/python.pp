@@ -117,27 +117,32 @@ class python {
                 require => Package['pip']
             }
             package { 'ipython':
-                ensure => '4.1.1',
+                ensure => '4.2.1',
                 provider => pip,
                 require => Package['pathlib2', 'jsonschema', 'terminado']
+            }
+            package { 'notebook':
+                ensure => '4.2.1',
+                provider => pip,
+                require => Package['ipython']
             }
             package { 'simplegeneric':
                 ensure => installed,
                 provider => pip,
                 require => Package['pip']
             }
+            package {'graphviz':
+                ensure => installed
+            }
+            package { 'pydot-ng':
+                ensure => installed,
+                provider => pip,
+                require => Package['pip', 'graphviz']
+            }
 #            package { 'jupyter':
 #                ensure => installed,
 #                provider => pip,
 #                require => Package['simplegeneric']
-#            }
-#            package {'graphviz':
-#                ensure => installed
-#            }
-#            package { 'pydot-ng':
-#                ensure => installed,
-#                provider => pip,
-#                require => Package['pip', 'graphviz']
 #            }
 #            package { 'theano':
 #                provider => pip,

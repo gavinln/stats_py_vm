@@ -62,7 +62,7 @@ There are [Puppet][160] scripts that automatically install the software when the
 3. Start the notebook
 
     ```bash
-    /vagrant/vm/jupyter_notebook.sh
+    /vagrant/vm/ipython_notebook.sh
     ```
 
 4. Open the notebook in the browser at the URL.
