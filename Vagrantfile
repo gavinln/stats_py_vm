@@ -47,10 +47,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   config.vm.provider "virtualbox" do |vb|
     # Don't boot with headless mode
-  #   vb.gui = true
+    # vb.gui = true
+    vb.memory = "4096"
 
-    # Use VBoxManage to customize the VM. For example to change memory:
-    vb.customize ["modifyvm", :id, "--memory", "4096"]
+    if Vagrant::Util::Platform.windows? then
+      # Fix for slow external network connections for Windows 10
+      vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
+      vb.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
+    end
   end
   #
   # View the documentation for the provider you're using for more

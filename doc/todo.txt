@@ -1,0 +1,8 @@
+
+Rename the 10_Linear_regression.ipynb notebook in the stats_py_vm project
+https://github.com/gavinln/stats_py_vm/tree/master/notebooks/scikit-learn
+
+Fix 10_Gradient_boosting_classifier.ipynb
+https://github.com/gavinln/scikit-vm/blob/master/notebooks/10_Gradient_boosting_classifier.ipynb
+
+Copy 10_Gradient_boosting_classifier.ipynb to stats_py_vm
