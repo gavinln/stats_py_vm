@@ -49,9 +49,9 @@ There are [Puppet][160] scripts that automatically install the software when the
 
 1. To start the virtual machine(VM) type
 
-    ```
-    vagrant up
-    ```
+```
+vagrant up
+```
 
 2. Connect to the VM
 
