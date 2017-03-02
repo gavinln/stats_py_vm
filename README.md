@@ -55,21 +55,21 @@ vagrant up
 
 2. Connect to the VM
 
-    ```
-    vagrant ssh
-    ```
+```
+vagrant ssh
+```
 
 3. Start the notebook
 
-    ```bash
-    /vagrant/vm/ipython_notebook.sh
-    ```
+```bash
+/vagrant/vm/ipython_notebook.sh
+```
 
 4. Open the notebook in the browser at the URL.
 
-    ```
-    http://localhost:8888/
-    ```
+```
+http://localhost:8888/
+```
 
 5. Open the **Index - Start Here** notebook  first
 
@@ -85,15 +85,15 @@ this conference is on [Youtube][190]
 
 1. Change to the notebooks directory
 
-    ```
-    cd /vagrant/notebooks
-    ```
+```
+cd /vagrant/notebooks
+```
 
 2. Get the notebooks into the directory pycon2015
 
-    ```
-    svn export http://github.com/jakevdp/sklearn_pycon2015/trunk/notebooks pycon2015
-    ```
+```
+svn export http://github.com/jakevdp/sklearn_pycon2015/trunk/notebooks pycon2015
+```
 
 3. In your Jupyter notebook list at http://localhost:8888/ the notebooks will
    be in the pycon2015 directory.
