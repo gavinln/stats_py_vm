@@ -1,0 +1,22 @@
+Miscellaneous
+# Generate configuration
+jupyter notebook  --NotebookApp.generate_config=True
+
+# Edit configuration
+vim ~/.jupyter/jupyter_notebook_config.py
+
+# Run notebook
+cd /vagrant/vm
+
+# Install notebook extensions
+jupyter contrib nbextension install --user
+
+# Start notebook
+./jupyter_notebook.sh
+
+# Change from first line to the second
+http://0.0.0.0:8888/?token=3eb71ae318795e96200fca155fa80602300aede7bb617870
+http://localhost:8888/?token=3eb71ae318795e96200fca155fa80602300aede7bb617870
+
+
+
