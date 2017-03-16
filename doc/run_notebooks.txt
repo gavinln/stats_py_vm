@@ -18,5 +18,10 @@ jupyter contrib nbextension install --user
 http://0.0.0.0:8888/?token=3eb71ae318795e96200fca155fa80602300aede7bb617870
 http://localhost:8888/?token=3eb71ae318795e96200fca155fa80602300aede7bb617870
 
+Add instructions on how to download Scientific Python lectures
+https://github.com/jrjohansson/scientific-python-lectures
 
+Install Microsoft fonts on Linux for Seaborn and Matplotlib
+echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+sudo apt-get install -y ttf-mscorefonts-installer
 

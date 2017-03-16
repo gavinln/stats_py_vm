@@ -26,6 +26,9 @@
 - name: install matplotlib
   pip: name=matplotlib state=present executable=pip3
 
+- name: install statsmodels for seaborn
+  pip: name=statsmodels state=present executable=pip3
+
 - name: install seaborn
   pip: name=seaborn state=present executable=pip3
 

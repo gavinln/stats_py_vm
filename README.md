@@ -7,7 +7,10 @@
 
 ## About
 
-This project provides a [Ubuntu (16.04)][20] [Vagrant][30] Virtual Machine (VM) with numerical and scientific libraries for Python. It includes the following libraries.
+This project provides a [Ubuntu (16.04)][20] [Vagrant][30] Virtual Machine
+(VM) with numerical and scientific libraries for Python. It includes the
+following libraries. It also contains Jupyter (formerly known as IPython)
+notebooks.
 
 [20]: https://wiki.ubuntu.com/Releases
 [30]: http://www.vagrantup.com/
@@ -65,7 +68,35 @@ vagrant ssh
 http://localhost:8888/
 ```
 
-5. Open the **Index - Start Here** notebook  first
+## Learning scientific programming with Jupyter notebooks
+
+[Robert Johansson][170] has multiple [notebooks][180] organized as a series of
+lectures.
+
+[170]: http://jrjohansson.github.io/
+[180]: https://github.com/jrjohansson/scientific-python-lectures
+
+1. Change to the notebooks directory
+```
+cd /vagrant/notebooks
+```
+
+2. Get the notebooks
+```
+git clone https://github.com/jrjohansson/scientific-python-lectures
+```
+
+## Bokeh notebooks
+
+1. Change to the notebooks directory
+```
+cd /vagrant/notebooks
+```
+
+2. Get the notebooks 
+```
+git clone https://github.com/bokeh/bokeh-notebooks
+```
 
 ## Scikit-learn notebooks
 
