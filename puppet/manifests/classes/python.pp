@@ -10,8 +10,8 @@ class python {
                 require => Package['python-pip']
             }
             package { "pip":
-                ensure => "8.0.2",
                 provider => pip,
+                ensure => latest,
                 require => Package['python-pip']
             }
             package { "numpy":
@@ -37,41 +37,6 @@ class python {
                 provider => pip,
                 require => Package['pip']
             }
-            package { 'untangle':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
-            package { 'yolk':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
-            package { 'pygments':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
-            package { 'nose':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
-            package { 'tornado':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
-            package { 'jinja2':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
-#            package { 'sympy':
-#                ensure => installed,
-#                provider => pip,
-#                require => Package['pip']
-#            }
             package { 'scikit-learn':
                 provider => pip,
                 require => Package['matplotlib']
@@ -86,21 +51,6 @@ class python {
                 provider => pip,
                 require => Package['matplotlib']
             }
-            package { 'patsy':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
-#            package { 'statsmodels':
-#                ensure => installed,
-#                provider => pip,
-#                require => Package['patsy', 'numpy', 'pandas', 'python-scipy']
-#            }
-#            package { 'bokeh':
-#                ensure => installed,
-#                provider => pip,
-#                require => Package['numpy']
-#            }
             package { 'jsonschema':
                 ensure => installed,
                 provider => pip,
@@ -116,29 +66,39 @@ class python {
                 provider => pip,
                 require => Package['pip']
             }
-            package { 'ipython':
-                ensure => '4.2.1',
-                provider => pip,
-                require => Package['pathlib2', 'jsonschema', 'terminado']
-            }
-            package { 'notebook':
-                ensure => '4.2.1',
-                provider => pip,
-                require => Package['ipython']
-            }
-            package { 'simplegeneric':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip']
-            }
-            package {'graphviz':
-                ensure => installed
-            }
-            package { 'pydot-ng':
-                ensure => installed,
-                provider => pip,
-                require => Package['pip', 'graphviz']
-            }
+#            package { 'sympy':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['pip']
+#            }
+#            package { 'bokeh':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['numpy']
+#            }
+#            package { 'ipython':
+#                ensure => '4.2.1',
+#                provider => pip,
+#                require => Package['pathlib2', 'jsonschema', 'terminado']
+#            }
+#            package { 'notebook':
+#                ensure => '4.2.1',
+#                provider => pip,
+#                require => Package['ipython']
+#            }
+#            package { 'simplegeneric':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['pip']
+#            }
+#            package {'graphviz':
+#                ensure => installed
+#            }
+#            package { 'pydot-ng':
+#                ensure => installed,
+#                provider => pip,
+#                require => Package['pip', 'graphviz']
+#            }
 #            package { 'jupyter':
 #                ensure => installed,
 #                provider => pip,
