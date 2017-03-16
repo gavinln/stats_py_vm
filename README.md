@@ -7,43 +7,37 @@
 
 ## About
 
-This project provides a [Ubuntu (14.04)][20] [Vagrant][30] Virtual Machine (VM) with numerical and scientific libraries for Python. It includes the following libraries.
+This project provides a [Ubuntu (16.04)][20] [Vagrant][30] Virtual Machine (VM) with numerical and scientific libraries for Python. It includes the following libraries.
 
-[20]: http://releases.ubuntu.com/14.04/
+[20]: https://wiki.ubuntu.com/Releases
 [30]: http://www.vagrantup.com/
 
 * [Numpy][40]
 * [Scipy][50]
-* [IPython-console][70]
-* [IPython-notebook][80]
-* [Sympy][80]
-* [Pandas][90]
-* [Statsmodels][100]
-* [Scikit learn][110]
+* [Jupyter notebook][60]
+* [Pandas][70]
+* [Scikit learn][80]
 
 [40]: http://www.numpy.org/
 [50]: http://www.scipy.org/
-[60]: http://ipython.org/
-[70]: http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html
-[80]: http://sympy.org/en/index.html
-[90]: http://pandas.pydata.org/
-[100]: http://statsmodels.sourceforge.net/
-[110]: http://scikit-learn.org/stable/
+[60]: http://jupyter.org/
+[70]: http://pandas.pydata.org/
+[80]: http://scikit-learn.org/stable/
 
 ### Visualization libraries
 
-* [Matplotlib][120]
-* [Seaborn][130]
-* [Bokeh][140]
+* [Matplotlib][90]
+* [Seaborn][100]
+* [Bokeh][110]
 * ggplot - does not work yet
 
-[120]: http://matplotlib.org/
-[130]: http://stanford.edu/~mwaskom/software/seaborn/
-[140]: http://bokeh.pydata.org/en/latest/
+[90]: http://matplotlib.org/
+[100]: http://stanford.edu/~mwaskom/software/seaborn/
+[110]: http://bokeh.pydata.org/en/latest/
 
-There are [Puppet][160] scripts that automatically install the software when the VM is started.
+There are [Ansible][160] scripts that automatically install the software when the VM is started.
 
-[160]: http://puppetlabs.com/
+[160]: https://www.ansible.com/
 
 ## Running
 
@@ -62,7 +56,7 @@ vagrant ssh
 3. Start the notebook
 
 ```bash
-/vagrant/vm/ipython_notebook.sh
+/vagrant/vm/jupyter_notebook.sh
 ```
 
 4. Open the notebook in the browser at the URL.
@@ -117,7 +111,3 @@ also provides an [SSH  client][200] for Windows.
 [210]: https://www.virtualbox.org/
 [220]: http://vagrantup.com/
 [230]: http://git-scm.com/
-
-## Credits
-
-* Glen Noronha
