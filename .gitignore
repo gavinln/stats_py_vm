@@ -2,6 +2,7 @@
 *.pyc
 *.class
 *.swp
+*.log
 .vagrant
 nosetests.xml
 coverage.xml
