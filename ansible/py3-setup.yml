@@ -8,6 +8,9 @@
 - name: install pip3
   apt: name=python3-pip state=installed
 
+- name: upgrade pip
+  pip: name=pip state=present executable=pip3 extra_args="--upgrade"
+
 - name: install httpie
   pip: name=httpie state=present executable=pip3
 

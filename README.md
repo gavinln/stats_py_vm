@@ -98,6 +98,18 @@ cd /vagrant/notebooks
 git clone https://github.com/bokeh/bokeh-notebooks
 ```
 
+## Bqplot notebooks
+
+1. Change to the notebooks directory
+```
+cd /vagrant/notebooks
+```
+
+2. Get the notebooks
+```
+git clone https://github.com/bloomberg/bqplot.git
+```
+
 ## Scikit-learn notebooks
 
 To get the Scikit learn [notebooks][170] from [PyCon 2015][180]. The video for

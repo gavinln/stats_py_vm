@@ -25,3 +25,11 @@ Install Microsoft fonts on Linux for Seaborn and Matplotlib
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
 sudo apt-get install -y ttf-mscorefonts-installer
 
+
+Install bqplot extensions
+sudo jupyter nbextension enable --py --sys-prefix bqplot
+
+Setup widgets extensions
+sudo jupyter nbextension enable --py --sys-prefix widgetsnbextension
+
+sudo pip3 install -U --pre bqplot
