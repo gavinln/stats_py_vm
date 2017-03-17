@@ -17,4 +17,5 @@
 - name: install bqplot
   pip: name=bqplot state=present executable=pip3
 
-
+- name: install bokeh
+  pip: name=bokeh state=present executable=pip3

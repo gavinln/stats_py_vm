@@ -19,13 +19,11 @@ notebooks.
 * [Scipy][50]
 * [Jupyter notebook][60]
 * [Pandas][70]
-* [Scikit learn][80]
 
 [40]: http://www.numpy.org/
 [50]: http://www.scipy.org/
 [60]: http://jupyter.org/
 [70]: http://pandas.pydata.org/
-[80]: http://scikit-learn.org/stable/
 
 ### Visualization libraries
 
@@ -93,7 +91,7 @@ git clone https://github.com/jrjohansson/scientific-python-lectures
 cd /vagrant/notebooks
 ```
 
-2. Get the notebooks 
+2. Get the notebooks
 ```
 git clone https://github.com/bokeh/bokeh-notebooks
 ```
