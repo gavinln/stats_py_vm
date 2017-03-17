@@ -12,3 +12,4 @@ output.xml
 pep8.log
 sphinx/build
 .ipynb_checkpoints
+ansible/playbook.retry
