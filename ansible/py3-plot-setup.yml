@@ -19,3 +19,6 @@
 
 - name: install bokeh
   pip: name=bokeh state=present executable=pip3
+
+- name: install holoviews
+  pip: name=holoviews state=present executable=pip3

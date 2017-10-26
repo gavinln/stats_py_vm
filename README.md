@@ -27,18 +27,19 @@ notebooks.
 
 ### Visualization libraries
 
-* [Matplotlib][90]
-* [Seaborn][100]
-* [Bokeh][110]
-* ggplot - does not work yet
+* [Matplotlib][80]
+* [Seaborn][90]
+* [Bokeh][100]
+* [Holoviews][110]
 
-[90]: http://matplotlib.org/
-[100]: http://stanford.edu/~mwaskom/software/seaborn/
-[110]: http://bokeh.pydata.org/en/latest/
+[80]: http://matplotlib.org/
+[90]: http://stanford.edu/~mwaskom/software/seaborn/
+[100]: http://bokeh.pydata.org/en/latest/
+[110]: https://www.youtube.com/watch?v=cMXKE0nB8k4
 
-There are [Ansible][160] scripts that automatically install the software when the VM is started.
+There are [Ansible][120] scripts that automatically install the software when the VM is started.
 
-[160]: https://www.ansible.com/
+[120]: https://www.ansible.com/
 
 ## Running
 
@@ -56,7 +57,7 @@ vagrant ssh
 
 3. Start the notebook
 
-```bash
+```
 /vagrant/vm/jupyter_notebook.sh
 ```
 
@@ -68,11 +69,11 @@ http://localhost:8888/
 
 ## Learning scientific programming with Jupyter notebooks
 
-[Robert Johansson][170] has multiple [notebooks][180] organized as a series of
+[Robert Johansson][120] has multiple [notebooks][130] organized as a series of
 lectures.
 
-[170]: http://jrjohansson.github.io/
-[180]: https://github.com/jrjohansson/scientific-python-lectures
+[120]: http://jrjohansson.github.io/
+[130]: https://github.com/jrjohansson/scientific-python-lectures
 
 1. Change to the notebooks directory
 ```
@@ -106,6 +107,18 @@ cd /vagrant/notebooks
 2. Get the notebooks
 ```
 git clone https://github.com/bloomberg/bqplot.git
+```
+
+## Holoviews notebooks
+
+1. Change to the notebooks directory
+```
+cd /vagrant/notebooks
+```
+
+2. Get the notebooks
+```
+git clone https://github.com/ioam/scipy-2017-holoviews-tutorial.git
 ```
 
 ## Scikit-learn notebooks
