@@ -121,6 +121,11 @@ cd /vagrant/notebooks
 git clone https://github.com/ioam/scipy-2017-holoviews-tutorial.git
 ```
 
+3. Get the data
+```
+curl http://s3.amazonaws.com/datashader-data/nyc_taxi.zip
+```
+
 ## Scikit-learn notebooks
 
 To get the Scikit learn [notebooks][170] from [PyCon 2015][180]. The video for
