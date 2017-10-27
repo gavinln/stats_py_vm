@@ -76,57 +76,54 @@ lectures.
 [130]: https://github.com/jrjohansson/scientific-python-lectures
 
 1. Change to the notebooks directory
+
 ```
 cd /vagrant/notebooks
 ```
 
 2. Get the notebooks
+
 ```
 git clone https://github.com/jrjohansson/scientific-python-lectures
 ```
 
-## Bokeh notebooks
+## Machine learning notebooks
+
+### Titanic notebooks
 
 1. Change to the notebooks directory
-```
-cd /vagrant/notebooks
-```
+
+    ```
+    cd /vagrant/notebooks/titanic
+    ```
 
 2. Get the notebooks
+
+    ```
+    curl -O https://gist.githubusercontent.com/mwaskom/8224591/raw/41ef1127b03c62798890d8a362d3c4dd7e2a5ac8/titanic_seaborn.ipynb
+    ```
+
+3. Install Slideshow
+
+    ```
+    sudo pip install RISE
+    sudo jupyter-nbextension install rise --py --sys-prefix
+    sudo jupyter-nbextension enable rise --py --sys-prefix
+    ```
+
+4. Titanic prediction
+
 ```
-git clone https://github.com/bokeh/bokeh-notebooks
+http://ahmedbesbes.com/how-to-score-08134-in-titanic-kaggle-challenge.html
 ```
 
-## Bqplot notebooks
+5. Titanic data description
 
-1. Change to the notebooks directory
 ```
-cd /vagrant/notebooks
-```
-
-2. Get the notebooks
-```
-git clone https://github.com/bloomberg/bqplot.git
+https://www.kaggle.com/c/titanic/data
 ```
 
-## Holoviews notebooks
-
-1. Change to the notebooks directory
-```
-cd /vagrant/notebooks
-```
-
-2. Get the notebooks
-```
-git clone https://github.com/ioam/scipy-2017-holoviews-tutorial.git
-```
-
-3. Get the data
-```
-curl http://s3.amazonaws.com/datashader-data/nyc_taxi.zip
-```
-
-## Scikit-learn notebooks
+### Scikit-learn notebooks
 
 To get the Scikit learn [notebooks][170] from [PyCon 2015][180]. The video for
 this conference is on [Youtube][190]
@@ -151,10 +148,53 @@ svn export http://github.com/jakevdp/sklearn_pycon2015/trunk/notebooks pycon2015
 3. In your Jupyter notebook list at http://localhost:8888/ the notebooks will
    be in the pycon2015 directory.
 
-## Other Scikit resources
+### Other Scikit resources
 
 https://github.com/amueller/scipy_2015_sklearn_tutorial/tree/master/notebooks
 https://github.com/ogrisel/parallel_ml_tutorial
+
+## Ploting notebooks
+
+### Bokeh notebooks
+
+1. Change to the notebooks directory
+```
+cd /vagrant/notebooks
+```
+
+2. Get the notebooks
+```
+git clone https://github.com/bokeh/bokeh-notebooks
+```
+
+### Bqplot notebooks
+
+1. Change to the notebooks directory
+```
+cd /vagrant/notebooks
+```
+
+2. Get the notebooks
+```
+git clone https://github.com/bloomberg/bqplot.git
+```
+
+### Holoviews notebooks
+
+1. Change to the notebooks directory
+```
+cd /vagrant/notebooks
+```
+
+2. Get the notebooks
+```
+git clone https://github.com/ioam/scipy-2017-holoviews-tutorial.git
+```
+
+3. Get the data
+```
+curl http://s3.amazonaws.com/datashader-data/nyc_taxi.zip
+```
 
 ## Requirements
 

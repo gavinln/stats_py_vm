@@ -29,9 +29,6 @@
 - name: install statsmodels for seaborn
   pip: name=statsmodels state=present executable=pip3
 
-- name: install seaborn
-  pip: name=seaborn state=present executable=pip3
-
 - name: install pyyaml
   pip: name=pyyaml state=present executable=pip3
 
@@ -41,8 +38,8 @@
 - name: install jupyter notebook
   pip: name=jupyter state=present executable=pip3
 
-- name: install jupyter widgets
-  pip: name=ipywidgets state=present executable=pip3
+  # - name: install jupyter widgets
+  #   pip: name=ipywidgets state=present executable=pip3
 
   # - name: install jupyter notebook extensions
   # pip: name=jupyter_contrib_nbextensions state=present executable=pip3
