@@ -115,6 +115,7 @@ git clone https://github.com/jrjohansson/scientific-python-lectures
 
 ```
 http://ahmedbesbes.com/how-to-score-08134-in-titanic-kaggle-challenge.html
+https://blog.socialcops.com/engineering/machine-learning-python/
 ```
 
 5. Titanic data description
