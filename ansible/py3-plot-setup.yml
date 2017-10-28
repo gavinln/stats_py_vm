@@ -21,4 +21,10 @@
   pip: name=bokeh state=present executable=pip3
 
 - name: install holoviews
-  pip: name=holoviews state=present executable=pip3
+  pip: name="holoviews[recommended]" state=present executable=pip3
+
+- name: install cloudpickle (required for holoviews)
+  pip: name=cloudpickle state=present executable=pip3
+
+- name: install cython
+  pip: name=cython state=present executable=pip3

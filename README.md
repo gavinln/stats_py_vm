@@ -182,17 +182,35 @@ git clone https://github.com/bloomberg/bqplot.git
 
 ### Holoviews notebooks
 
-1. Change to the notebooks directory
+1. Install datashader
+
+```
+cd ~
+git clone https://github.com/bokeh/datashader.git
+cd datashader
+sudo pip3 install -e .
+```
+
+2. Install geoviews
+
+```
+cd ~
+git clone https://github.com/ioam/geoviews.git
+cd geoviews
+sudo pip3 install -e .
+```
+
+3. Change to the notebooks directory
 ```
 cd /vagrant/notebooks
 ```
 
-2. Get the notebooks
+4. Get the notebooks
 ```
 git clone https://github.com/ioam/scipy-2017-holoviews-tutorial.git
 ```
 
-3. Get the data
+5. Get the data
 ```
 curl http://s3.amazonaws.com/datashader-data/nyc_taxi.zip
 ```
