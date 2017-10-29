@@ -45,27 +45,40 @@ There are [Ansible][120] scripts that automatically install the software when th
 
 1. To start the virtual machine(VM) type
 
-```
-vagrant up
-```
+    ```
+    vagrant up
+    ```
 
 2. Connect to the VM
 
-```
-vagrant ssh
-```
+    ```
+    vagrant ssh
+    ```
 
-3. Start the notebook
+3. Install Jupyter notebook extensions (run only once)
 
-```
-/vagrant/vm/jupyter_notebook.sh
-```
+    ```
+    jupyter contrib nbextension install --user
+    ```
 
-4. Open the notebook in the browser at the URL.
+4. Install vim extension (optional)
 
-```
-http://localhost:8888/
-```
+    ```
+    cd $(jupyter --data-dir)/nbextensions
+    git clone https://github.com/lambdalisue/jupyter-vim-binding vim_binding
+    ```
+
+5. Start the notebook
+
+    ```
+    /vagrant/vm/jupyter_notebook.sh
+    ```
+
+6. Open the notebook in the browser at the URL.
+
+    ```
+    http://localhost:8888/
+    ```
 
 ## Learning scientific programming with Jupyter notebooks
 

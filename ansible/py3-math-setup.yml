@@ -38,9 +38,5 @@
 - name: install jupyter notebook
   pip: name=jupyter state=present executable=pip3
 
-  # - name: install jupyter widgets
-  #   pip: name=ipywidgets state=present executable=pip3
-
-  # - name: install jupyter notebook extensions
-  # pip: name=jupyter_contrib_nbextensions state=present executable=pip3
-
+- name: install jupyter notebook extensions
+  pip: name=jupyter_contrib_nbextensions state=present executable=pip3

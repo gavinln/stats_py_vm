@@ -17,8 +17,8 @@
 - name: install bqplot
   pip: name=bqplot state=present executable=pip3
 
-- name: install bokeh
-  pip: name=bokeh state=present executable=pip3
+- name: install bokeh (version 0.12.3 needed for holoviews")
+  pip: name=bokeh state=present version="0.12.3" executable=pip3
 
 - name: install holoviews
   pip: name="holoviews[recommended]" state=present executable=pip3
