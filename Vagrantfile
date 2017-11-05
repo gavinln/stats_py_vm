@@ -61,6 +61,8 @@ Vagrant.configure(2) do |config|
       vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
       vb.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
     end
+
+    config.vm.hostname = "stats-py-vm"
   end
   #
   # View the documentation for the provider you're using for more

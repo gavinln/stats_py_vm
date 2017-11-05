@@ -35,6 +35,9 @@
 - name: install pandas
   pip: name=pandas state=present executable=pip3
 
+- name: install xlrd
+  pip: name=xlrd state=present executable=pip3
+
 - name: install jupyter notebook
   pip: name=jupyter state=present executable=pip3
 
