@@ -28,3 +28,6 @@
 
 - name: install cython
   pip: name=cython state=present executable=pip3
+
+- name: install pixiedust
+  pip: name=pixiedust state=present executable=pip3

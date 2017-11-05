@@ -35,7 +35,7 @@ notebooks.
 [80]: http://matplotlib.org/
 [90]: http://stanford.edu/~mwaskom/software/seaborn/
 [100]: http://bokeh.pydata.org/en/latest/
-[110]: https://www.youtube.com/watch?v=cMXKE0nB8k4
+[110]: http://holoviews.org/
 
 There are [Ansible][120] scripts that automatically install the software when the VM is started.
 
@@ -90,15 +90,15 @@ lectures.
 
 1. Change to the notebooks directory
 
-```
-cd /vagrant/notebooks
-```
+    ```
+    cd /vagrant/notebooks
+    ```
 
 2. Get the notebooks
 
-```
-git clone https://github.com/jrjohansson/scientific-python-lectures
-```
+    ```
+    git clone https://github.com/jrjohansson/scientific-python-lectures
+    ```
 
 ## Machine learning notebooks
 
@@ -126,16 +126,16 @@ git clone https://github.com/jrjohansson/scientific-python-lectures
 
 4. Titanic prediction
 
-```
-http://ahmedbesbes.com/how-to-score-08134-in-titanic-kaggle-challenge.html
-https://blog.socialcops.com/engineering/machine-learning-python/
-```
+    ```
+    http://ahmedbesbes.com/how-to-score-08134-in-titanic-kaggle-challenge.html
+    https://blog.socialcops.com/engineering/machine-learning-python/
+    ```
 
 5. Titanic data description
 
-```
-https://www.kaggle.com/c/titanic/data
-```
+    ```
+    https://www.kaggle.com/c/titanic/data
+    ```
 
 ### Scikit-learn notebooks
 
@@ -149,15 +149,15 @@ this conference is on [Youtube][190]
 
 1. Change to the notebooks directory
 
-```
-cd /vagrant/notebooks
-```
+    ```
+    cd /vagrant/notebooks
+    ```
 
 2. Get the notebooks into the directory pycon2015
 
-```
-svn export http://github.com/jakevdp/sklearn_pycon2015/trunk/notebooks pycon2015
-```
+    ```
+    svn export http://github.com/jakevdp/sklearn_pycon2015/trunk/notebooks pycon2015
+    ```
 
 3. In your Jupyter notebook list at http://localhost:8888/ the notebooks will
    be in the pycon2015 directory.
@@ -172,26 +172,30 @@ https://github.com/ogrisel/parallel_ml_tutorial
 ### Bokeh notebooks
 
 1. Change to the notebooks directory
-```
-cd /vagrant/notebooks
-```
+
+    ```
+    cd /vagrant/notebooks
+    ```
 
 2. Get the notebooks
-```
-git clone https://github.com/bokeh/bokeh-notebooks
-```
+
+    ```
+    git clone https://github.com/bokeh/bokeh-notebooks
+    ```
 
 ### Bqplot notebooks
 
 1. Change to the notebooks directory
-```
-cd /vagrant/notebooks
-```
+
+    ```
+    cd /vagrant/notebooks
+    ```
 
 2. Get the notebooks
-```
-git clone https://github.com/bloomberg/bqplot.git
-```
+
+    ```
+    git clone https://github.com/bloomberg/bqplot.git
+    ```
 
 ### Holoviews notebooks
 
